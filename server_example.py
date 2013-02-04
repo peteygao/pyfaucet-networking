@@ -1,9 +1,24 @@
 import pyfaucet, socket, time, random, string, json
 
 """
+pyFaucet Networking Library
+
+Example Server for pyfaucet-networking.
+
+More info at:
+https://github.com/peteygao/pyfaucet-networking
+
+Created by: Peter Gao (GMC username 'matrixquare')
+Email: me@petergao.com
+Twitter: @peteygao
+
+All source code is licensed under GNU LESSER GENERAL PUBLIC LICENSE:
+http://opensource.org/licenses/lgpl-3.0.html
+"""
+
+"""
 Define all shared constants between clients and server:
 """
-COORD_NAT_PUNCH=200
 PING_SERVER=253
 COULD_NOT_HOST=254
 COULD_NOT_JOIN=255
@@ -17,9 +32,6 @@ KEEP_GAME_ALIVE=4
 CHAT=5
 KEEP_CLIENT_ALIVE=6
 FORWARD_PACKET=204
-NAT_PUNCH_REPLY=203
-NAT_PUNCH=202
-PERFORM_NAT_PUNCH=201
 
 def clean_game_list(games_list):
     """
