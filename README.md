@@ -5,6 +5,8 @@ Python library for working with the Faucet Networking Extension for Game Maker.
 
 Has preliminary bindings for Faucet Networking buffer functions.
 
+This is completely open source (LGPL-3 license). Forks and Pull Requests are much appreciated :)! Make this library *your own*!
+
 ##Quick Start
 While there is a rather feature-full server example, it may be too much for quick learning, so here are the steps to get pyfaucet up and running:
 
@@ -20,6 +22,8 @@ sock.sendto( buffer, ("other.ip.address", 54321) ) # Sends this UDP packet to th
 ```
 
 The above demonstrates a very easy way for pyfaucet to send a datagram to a GM client.
+
+On the GM side, there is a pyfaucet_networking.gml file which should be imported into your GM project (Faucet Networking .gex should be installed. Available separately here: https://github.com/Medo42/Faucet-Networking-Extension/).
 
 ##Helper Functions
 Due to the nature of datagrams and the way Faucet Networking handles strings, there is no way to know ahead of time how long a string is (Faucet Networking, unlike 39dll, does not use null byte delimiters). To make it easier to send and receive strings, there are 3 helper functions to write strings:
