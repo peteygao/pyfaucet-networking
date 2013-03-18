@@ -1,6 +1,6 @@
 import struct
 
-class buffer(bytearray):
+class Buffer(bytearray):
     index = 0
 
     def __init__(self, message=""):

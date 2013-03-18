@@ -51,8 +51,8 @@ if __name__ == "__main__":
 
     games_list = list()
     query = 0
-    buf = pyfaucet.buffer()
-    resp = pyfaucet.buffer()
+    buf = pyfaucet.Buffer()
+    resp = pyfaucet.Buffer()
     
     while 1:
         msg, (addr, port) = udp.recvfrom( 4096 )
